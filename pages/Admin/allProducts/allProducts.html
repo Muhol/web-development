@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/Admin/allProducts/style.css">
+    <link rel="stylesheet" href="/Variables.css">
+    <title>Document</title>
+</head>
+<body class="no-margin w-h-full bg-primary">
+    <div class="allProductsContainer">
+        <div class="headerAllProducts">
+          <div class="left">
+            <h1>All Products </h1>
+          </div>
+          <div class="right">
+            <button class="uploadButton" onClick={openAddProduct}>
+              Upload Product
+            </button>
+          </div>
+        </div>
+  
+        <div class="productlist">
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+            <div class="productsAdmin">
+                <div class="product">
+                  <div class="productImage">
+                    <img src="../../../assets/images/boAt Airdopes 111 1.webp"  alt="" />
+                  </div>
+                  <div class="details">
+                    <div class="left">
+                      <p>
+                        <b>{product.productName}</b>
+                      </p>
+                      <p class='descrition'>{product.description}</p>
+                    </div>
+                    <div class="right">
+                      <p>$ {product.sellingPrice}</p>
+                      <p><b>Discount $ {discount}</b></p>
+                    </div>
+                  </div>
+                  <div class="edit">
+                    <button title="Edit" class="editbtn" onClick={handleOnclick}>
+                      <!-- <MdEdit /> -->
+                      <img src="../../../assets/icons/edit.svg" alt="">
+                    </button>
+                    <!-- onClick={(e) => handleDelete(e, product._id)} -->
+                    <button title="Delete" class="deletebtn" >
+                        <img src="../../../assets/icons/delete.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              <!-- {showUpdateProduct && <UpdateProduct close={openUpdateProduct} data={editData} fetchAllProducts={fetchAllProducts}/>} -->
+        
+            </div>
+ 
+          <!-- {data?.map((product, index) => {
+            return (
+              <AdminProducts
+                product={product}
+                index={index}
+                key={product._id}
+                fetchAllProducts={fetchAllProducts}
+              />
+            );
+          })}
+        </div>
+        {showAddProduct && (
+          <AddProduct
+            close={openAddProduct}
+            fetchAllProducts={fetchAllProducts}
+          />
+        )} -->
+      </div>
+</body>
+</html>

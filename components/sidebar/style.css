@@ -1,0 +1,48 @@
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .leftWrap {
+      padding: 0 40px 0 20px;
+      position: sticky;
+      overflow-y: scroll;
+      flex: 1;
+      height: 100vh;
+  
+      .wrap {
+        margin-top: 150px;
+        .heading {
+          font-weight: 500;
+          padding: 0px 0 15px 0;
+          border-bottom: 1px solid var(--second-color);
+        }
+        .filter1 {
+          padding: 10px 0 15px;
+          border-bottom: 1px solid var(--second-color);
+  
+          li {
+            list-style: none;
+            margin: 0 0 10px 0;
+          }
+          .filterbox {
+            padding: 0 10px 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+  
+            .bracket {
+              display: flex;
+              flex-direction: column;
+              gap: 6px;
+  
+              input {
+                padding: 3px;
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+    }
+}

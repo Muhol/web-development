@@ -1,0 +1,66 @@
+<!-- <HTML >
+    <Head>
+        <link rel="stylesheet" href="../Variables.css">
+    <title>Sample Website</title>
+    </Head>
+        <Frameset class="bg-primary" rows="90px,*" background="#fff5d0" frameborder="yes" border=1>
+         <frame name="header"src="../../components/header/header.html" noresize scrolling="no" marginheight=0>
+            <a href="./allUsers/allUsers.html"></a>
+          <frameset  cols="16%,84%">
+          <frame name="sidebar"src="../../components/Admin-sidebar/admin_sidebar.html" noresize scrolling="no">
+          <frame name="adminMain"src="./allUsers/allUsers.html"  scrolling="">
+         </Frameset>
+         <frame name="footer"src="footer.html" noresize scrolling="no" marginheight=2>
+        </Frameset>
+    </HTML>
+     -->
+
+     
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Variables.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body class="no-margin bg-primary">
+    <div id="header" class="header"></div>
+    <div class="body">
+        <div id="adminsidebar" class="adminsidebar"></div>
+        <div id="admincontent" class="cont"></div>
+        <!-- <a href="./allUsers/allUsers.html"></a> -->
+    </div>
+</body>
+<script>
+    async function includeHTML(file, elementId) {
+        try {
+            let response = await fetch(file);
+            let data = await response.text();
+            document.getElementById(elementId).innerHTML = data;
+        } catch (error) {
+            console.error("Error loading file:", error);
+        }
+    }
+    includeHTML("../../components/header/header.html", "header");
+    includeHTML("../../components/Admin-sidebar/admin_sidebar.html", "adminsidebar");
+
+    async function loadPage(file){
+        try{
+            let response = await fetch(file);
+            let data = await response.text();
+            document.getElementById("admincontent").innerHTML = data;
+        }catch(error){
+            console.error("Error loading page", error);
+        }
+    }
+
+    loadPage("./allUsers/allUsers.html")
+    document.addEventListener("DOMContentLoaded", () => {
+    })
+</script>
+</html>
+
+   

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Variables.css">
+    <link rel="stylesheet" href="/pages/Admin/allUsers/style.css">
+    <title>Document</title>
+</head>
+<body class="bg-primar">
+  <div class="usertableheaders">
+    <div class="profilepic common">
+      <p><b>Profile</b></p>
+    </div>
+    <div class="username common">
+        <p><b>Username</b></p>
+    </div>
+    <div class="email common">
+        <p><b>Email</b></p>
+    </div>
+    <div class="role common">
+        <p>Role</p>
+    </div>
+    <div class="datecreated common">
+        <p><b>Date Created</b></p>
+    </div>
+    <div class="action common">
+      <p>Edit</p>
+    </div>
+</div>
+
+<div class="user">
+    <div class="usertablecontent">
+      <div class="profilepic common">
+        <img
+          src="../../../assets/images/Gray and Black Simple Studio Logo.jpg"
+          alt=""
+        />
+
+      </div>
+      <div class="username common">
+        <p>{user.username}</p>
+      </div>
+      <div class="email common">
+        <p>{user.email}</p>
+      </div>
+      <div class="role common">
+        <p>{user.role}</p>
+      </div>
+      <div class="datecreated common">
+        <p>moment(user.createdAt)</p>
+      </div>
+      <div class="action common" 
+      >
+        <button><img src="../../../assets/icons/edit.svg" alt="edit"></button>
+        
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>

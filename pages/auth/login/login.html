@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../../Variables.css">
+    <title>Document</title>
+</head>
+<body class="no-margin">
+    <section class="main1">
+        <div class="logincontainer">
+          <h1>Sign In</h1>
+          <div class="loginlogo">
+            <div class="image">
+              <img src="../../../assets/images/Gray and Black Simple Studio Logo.jpg" alt="" />
+              <form>
+                <label htmlFor="profilpic">
+                  <div class="imageupload">
+                    <p>Change profile</p>
+                  </div>
+                </label>
+                <input type="file" id="profilpic" />
+              </form>
+            </div>
+          </div>
+  
+          <form onSubmit={handleLogin}>
+            <div class="info">
+              <label>Email</label>
+              <div class="input">
+                <input
+                  type="email"
+                  placeholder="Enter your email..."
+                  name="email"
+                  />
+              </div>
+            </div>
+            <div class="info">
+              <label>Password</label>
+              <div class="input">
+                <input
+                  type='password'
+                  placeholder="Enter your password..."
+                  name="password"
+                  />
+                <div
+                  class="showicon"
+                  >
+                </div>
+              </div>
+              <div class="passwordreset">
+                <a href="/password-reset">
+                  <p>Forgot Password</p>
+                </a>
+              </div>
+            </div>
+  
+            <button type="submit" onSubmit={handleLogin}>
+              Login
+            </button>
+          </form>
+          <div class="signup">
+            <p>
+              Don't have an Account? <a href="../sign-up/signUp.html">Sign Up</a>
+            </p>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

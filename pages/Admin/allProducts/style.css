@@ -1,0 +1,155 @@
+.allProductsContainer {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    /* padding-top: 100px; */
+  
+    .headerAllProducts {
+      background-color: var(--colpalb1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      margin: 20px 0;
+  
+     
+      .right {
+        .uploadButton {
+         
+          padding: 6px 30px;
+          
+  
+          display: flex;
+          display: flex;
+          justify-content: center;
+          font-weight: 650;
+          right: 5px;
+          bottom: 3px;
+          background-color: var(--colpalb1);
+          border: 3px solid var(--buttonb);
+          color: var(--colpalb1);
+          font-size: 19px;
+          transition: all 0.2s;
+          color: var(--buttonb);
+      
+          &:hover {
+            background-color: var(--buttonb);
+            border: 3px solid var(--buttonb);
+            color: bisque;
+            letter-spacing: 0.1rem;
+          }
+        }
+      }
+    }
+    .productlist{
+      display: flex;
+      padding: 0 30px;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .productsAdmin {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        min-width: 400px;
+        height: 400px;
+        background-color: var(--colpalb1);
+        border-radius: 10px;
+      
+      
+        &:hover {
+          box-shadow: 2px 2px 40px rgba(128, 128, 128, 0.263);
+
+         
+        }
+        .product {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 10px;
+          justify-content: space-between;
+          margin-top: 5px;
+          gap: 10px;
+          padding: 10px;
+      
+          &:hover {
+      
+            .edit {
+              display: flex;
+            }
+          }
+      
+          .productImage {
+            img {
+              width: 100px;
+              height: 100px;
+              object-fit: contain;
+              border-radius: 5px;
+              mix-blend-mode: multiply;
+            }
+          }
+          .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+      
+            .left {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+      
+              .descrition{
+                max-width: 300px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              } 
+            }
+            .right {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+          .edit {
+            width: 99%;
+            height: 45px;
+            align-items: center;
+            justify-content: end;
+            padding: 0 3px 3px 3px;
+            bottom: 0;
+            position: absolute;
+            display: none;
+            gap: 10px;
+      
+            button {
+              padding: 5px;
+              background-color: transparent;
+              border: none;
+              border-radius: 3px;
+              font-size: larger;
+      
+              &.editbtn {
+                &:hover {
+                  background-color: green;
+                  color: white;
+                }
+              }
+              &.deletebtn {
+                &:hover {
+                  background-color: red;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+      
+    }
+  }
+  

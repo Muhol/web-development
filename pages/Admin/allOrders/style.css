@@ -1,0 +1,165 @@
+.usertableheaders{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    min-width: 700px;
+    height: 100px;
+
+
+    .common{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        padding-left: 10px;
+        border-bottom: 1px solid rgb(189, 187, 187);
+
+    }
+    .profilepic{
+        width: 5%;
+        background-color: rgba(128, 128, 128, 0.712);
+        display: flex;
+        justify-content: center;
+        
+    }
+    .username{
+        width: 15%;
+        background-color: rgba(128, 128, 128, 0.76);
+        
+    }
+    .email{
+        width: 20%;
+        background-color: rgba(128, 128, 128, 0.685);
+    }
+    .role{
+        width: 20%;
+        background-color: rgb(140, 141, 141);
+    }
+    .datecreated{
+        width: 15%;
+        background-color: rgba(173, 171, 171, 0.719);
+        
+    }
+    .status{
+        width: 10%;
+        background-color: rgb(140, 141, 141);
+    }
+    .action{
+        width: 15%;
+        background-color: rgb(182, 184, 183);
+        display: flex;
+            justify-content: center;
+        
+    }
+}
+
+.user{
+    flex: 1;
+    height: 100%;
+    .usertablecontent{
+        display: flex;
+        width: 100%;
+        min-width: 700px;
+        align-items: center;
+
+
+        .common{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 70px;
+            padding-left: 10px;
+            border-bottom: 1px solid rgb(189, 187, 187);
+            p{
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                -webkit-box-align: center;
+                overflow: hidden;
+            }
+
+        }
+        .profilepic{
+            width: 5%;
+            display: flex;
+            justify-content: center;
+            
+            
+            img{
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+                border-radius: 100px;
+            }
+        }
+        .username{
+            width: 15%;
+            background-color: rgba(224, 224, 224, 0.527);
+            p{
+                max-width: 100px;
+            }
+        }
+        .email{
+            width: 20%;
+            p{
+                max-width: 250px;
+            }
+        }
+        .role{
+
+            width: 20%;
+            background-color: rgba(164, 165, 165, 0.534);
+            p{
+                max-width: 260px;
+            }
+        }
+        .datecreated{
+            width: 15%;
+            background-color: rgba(240, 243, 242, 0.589);
+        }
+        .status{
+            width: 10%;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .action{
+            width: 15%;
+            background-color: rgba(204, 207, 206, 0.637);
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+            button{
+                height: 50px;
+                border-radius: 10px;
+                background-color: transparent;
+                border: none;
+                transition: all 0.2s;
+                cursor: pointer;
+
+                &.view{
+                    background-color: var(--buttonb);
+                    color: antiquewhite;
+                    font-weight: 500;
+                    padding: 8px 20px;
+                }
+                &.edit{
+                width: 50px;
+
+
+                }
+
+                &:hover{
+                    background-color: var(--second-color);
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}

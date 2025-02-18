@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/Admin-sidebar/style.css">
+    <link rel="stylesheet" href="/Variables.css">
+    <title>Document</title>
+</head>
+<body class="no-margin">
+    <aside>
+        <div class="profiledetails">
+                
+            <div class="profileicon">
+            <img src="../../assets/images/Gray and Black Simple Studio Logo.jpg" alt="" />
+            </div>
+                
+            <p> {user?.username}</p>
+          
+        </div>
+        <div class="adminfunctions">
+            <a href="" onclick="loadPage('/pages/Admin/allUsers/allUsers.html')">
+                <div class="navlink">
+                    <p>All Users</p>
+                </div>
+            </a>
+            <a href="" onclick="loadPage('/pages/Admin/allProducts/allProducts.html')">
+                <div class="navlink">
+                    <p>All Products</p>
+                </div>
+            </a>
+            <a href="" onclick="loadPage('/pages/Admin/allOrders/allOrders.html')">
+                <div class="navlink">
+                    <p>All Orders</p>
+                </div>
+            </a>
+        </div>
+      </aside>
+</body>
+</html>

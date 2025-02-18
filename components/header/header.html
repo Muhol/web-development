@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Variables.css"> 
+    <link rel="stylesheet" href="/components/header/header.css">
+    <title>header</title>
+</head>
+<body>
+    <header>
+        <div class="headercontainer">
+          <div class="left">
+            <a href="../../pages/index.html" target="_top">
+              <div class="logo">
+                <img src="../../assets/images/shopIt logo.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="middle">
+            <div class="search">
+              <form 
+              >
+                <input type="text" placeholder="Search Products here..."  
+                >
+                <button type="submit">
+                </button>
+              </form>
+              <div class="searchicon"></div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="navlinks">
+              <a href="/" target="_top" >Home</a>
+              <a href="../../pages/index.html" target="_top" >Shop</a>
+              <a href="#">Contact Us </a>
+            </div>
+  
+            <div class="usericons">
+              <div class="profile">
+               
+                  <div class="profileicon">
+                    <p class="icon" >Profile</p>
+                    <div class="menu">
+                      <nav>
+                        <a href="#"><p>profile settings</p></a>
+                        <a href="../../pages/Admin/Admin.html"><p>Admin Panel</p></a>
+                      </nav>
+                    </div>
+                  </div>
+              </div>
+              <div class="cart">
+                <a href="#" onclick="loadPage('/pages/cart/cart.html')">
+                  <p>Cart(0)</p>
+                </a>
+              </div>
+            </div>
+            <a href="/login">
+              <button>Login</button>
+              </a>
+          </div>
+        </div>
+      </header>
+</body>
+</html>

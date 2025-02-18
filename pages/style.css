@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+
+    .header{
+        width: 100%;
+        height: 90px;
+        position: fixed;
+        z-index: 10;
+        border-radius: 20px;
+        background-color: transparent;
+    }
+    .body{
+        /* height: calc( 100vh - 200px); */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+
+        .sidebar{
+            min-width: 250px;
+            position: sticky;
+        }
+        .cont{
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            /* overflow-y: scroll; */
+            padding-top: 100px;
+            /* background-color: red; */
+        }
+    }
+}

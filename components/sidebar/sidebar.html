@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/sidebar/style.css">
+    <link rel="stylesheet" href="/Variables.css">
+    <title>Document</title>
+</head>
+<body class="no-margin bg-primary">
+    <div class="leftWrap">
+        <div class="wrap">
+          <div class="heading">
+            <p>Filter By</p>
+          </div>
+    
+          <div class="filter1">
+            <li>Cartegory</li>
+            <div class="filterbox">
+              <!-- Cartegory List  -->
+          </div>
+          <div class="filter1">
+            <li>Price</li>
+            <div class="filterbox">
+              <div class="bracket">
+                <label htmlFor="lowest">Low</label>
+                <input type="number" id="lowest" min={0} />
+              </div>
+              <div class="bracket">
+                <label htmlFor="highest">High</label>
+                <input type="number" id="highest" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+

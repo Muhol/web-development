@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Variables.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body class="no-margin no-overflow w-h-screen bg-primary">
+    <div id="header" class="header"></div>
+    <div class="body">
+        <div id="sidebar" class="sidebar"></div>
+        <div id="content" class="cont"></div>
+        <!-- <a href="./Home/Home.html"></a> -->
+    </div>
+</body>
+<script>
+    async function includeHTML(file, elementId) {
+        try {
+            let response = await fetch(file);
+            let data = await response.text();
+            document.getElementById(elementId).innerHTML = data;
+        } catch (error) {
+            console.error("Error loading file:", error);
+        }
+    }
+    includeHTML("../components/header/header.html", "header");
+    includeHTML("../components/sidebar/sidebar.html", "sidebar");
+
+    async function loadPage(file){
+        try{
+            let response = await fetch(file);
+            let data = await response.text();
+            document.getElementById("content").innerHTML = data;
+        }catch(error){
+            console.error("Error loading page", error);
+        }
+    }
+
+    loadPage("./Home/Home.html")
+    document.addEventListener("DOMContentLoaded", () => {
+    })
+</script>
+</html>
+
+   

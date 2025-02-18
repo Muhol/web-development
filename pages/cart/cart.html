@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/cart/styles.css">
+    <link rel="stylesheet" href="/Variables.css">
+    <title>Document</title>
+</head>
+<body class="no-margin">
+    <div class="cartcontainer">
+        <div class="cartwrapper">
+          <div class="left">
+            <p class="heading">My Cart </p>
+            <div class="leftcont">
+              <!-- {products?.map((product) => { -->
+                <!-- return ( -->
+                  <div class="cartProductCard" key={product?.productId}>
+                    <div class="imgcontainer">
+                      <!-- <img src={product?.productDetails.productImage[0]} alt="" /> -->
+                      <img src='../../assets/images/boAt Airdopes 111 1.webp' alt="" />
+                    </div>
+                    <div class="details">
+                      <p class="productname">
+                        boAt Airdopes 111 imioncoaneconeoncwoielaksc jldnnaoidnc ajnodcka coancoudcn jdocnldc cn lafnvila rvaivr airvua  auirbviabuerv vairbvuabi rvaurviaebr vaer
+                        <!-- {product?.productDetails.productName} -->
+                      </p>
+                      <p class="price">
+                        <!-- KES <span>{product?.price}</span> -->
+                        KES <span>30000</span>
+                      </p>
+                      <div class="quantitysection">
+                          <!-- onClick={(e) => decreaseQty(e, product?.productId)} -->
+                        <button 
+                        >
+                          <!-- <RiSubtractLine /> -->
+                        </button>
+                        <!-- <p class="quantity">{product?.quantity}</p> -->
+                        <p class="quantity">3</p>
+                        <!-- onClick={(e) => increaseQty(e, product?.productId)} -->
+                        <button 
+                            >
+                          <!-- <IoMdAdd /> -->
+                        </button>
+                      </div>
+                      <!-- => handleDelete(e, product?.productId)} -->
+                      <div
+                        class="delete"
+                        >
+                        <!-- onClick={(e)  -->
+                        <!-- <RiDeleteBin5Line /> -->
+                      </div>
+                    </div>
+                    <div class="subtotal">
+                      <!-- <p>  KES <span>{product?.price * product?.quantity}</span></p> -->
+                      <p>  KES <span>30000</span></p>
+                    </div>
+                  </div>
+                <!-- ); -->
+              <!-- })} -->
+            </div>
+          </div>
+          <div class="right">
+            <div class="summary">
+              <div class="top">
+                <p class="heading">Order Summary</p>
+              </div>
+              <div class="middle">
+                <div class="total">
+                  <p>Total Price</p>
+                  <span>KES {totalAmt || 0}</span>
+                </div>
+              </div>
+              <div class="bottom">
+                  <!-- onClick={(e) => handleCheckOut(e)} -->
+                <button 
+                    >Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- {/* <ShippingInformation/> */} -->
+        <!-- {showShippingInformation &&  -->
+          <!-- <ShippingInformation  -->
+            <!-- close = {closeCheckoutDialogBox} -->
+          <!-- /> -->
+        <!-- } -->
+      </div>
+</body>
+</html>

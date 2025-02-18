@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/Admin/allOrders/style.css">
+    <link rel="stylesheet" href="/Variables.css">
+    <title>Document</title>
+</head>
+<body class="bg-primary">
+    <div class="usertableheaders">
+        <div class="profilepic common">
+          <p><b>Profile</b></p>
+        </div>
+        <div class="username common">
+            <p><b>Username</b></p>
+        </div>
+        <div class="email common">
+            <p><b>Email</b></p>
+        </div>
+        <div class="role common">
+            <p>Order Id</p>
+        </div>
+        <div class="datecreated common">
+            <p><b>Due Date</b></p>
+        </div>
+        <div class="status common">
+            <p><b>Order Status</b></p>
+        </div>
+        <div class="action common">
+          <p>Edit</p>
+        </div>
+    </div>
+    
+    <div class="user">
+        <div class="usertablecontent">
+          <div class="profilepic common">
+            <img
+              src="../../../assets/images/Gray and Black Simple Studio Logo.jpg"
+              alt=""
+            />
+    
+          </div>
+          <div class="username common">
+            <p>{user.username}h jk a hvlh fkvhdfvdfvaffbzsfbzdfbzfzfb</p>
+          </div>
+          <div class="email common">
+            <p>{user.email}jkefbiwebvcindjicwjn idncidcw arvkbeviberibvakerbvkayrbvkuabeurbvauvyabuerbvabkurbvauer</p>
+          </div>
+          <div class="role common">
+            <p>{user.role}shfdbviskbviusbkvjskjbvkhbvskhdvnva wivzhkcbvyrvafkvjvi j ibr  f ivhbryskvbrvrv rva rviarbvabrvjabakajr vja iabriv vuyrvwurv ar v</p>
+          </div>
+          <div class="datecreated common">
+            <p>moment(user.createdAt)</p>
+          </div>
+          <div class="status common">
+            <img src="../../../assets/icons/delivered-green.svg" alt="">
+            <p><b>Delivered</b></p>
+           </div>
+          <div class="action common" 
+          >
+            <button class="view" title="view order">View</button>
+            <button class="edit" title="Edit order status"><img src="../../../assets/icons/edit.svg" alt="edit"></button>
+            
+          </div>
+          
+        </div>
+      </div>
+</body>
+</html>
