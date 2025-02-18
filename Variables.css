@@ -7,12 +7,14 @@
     --backgr-2: rgb(30, 62, 73);
     --backgr-3: white;
     --shadow: rgba(0, 0, 0, 0.062);
-    --logoBackground: #43240A;
+    /* --logoBackground: #43240A; */
+    --logoBackground: gold;
     /* --colpalb1: #fff5d0; */
     --colpalb1: #ffffff;
     --colpalb3: #0f222d;
     --colpalb2: #411e0634;
-    --buttonb:#a05222;
+    /* --buttonb:#a05222; */
+    --buttonb:rgb(218, 187, 12);
     --fontc1: #411E06; 
 }
 body, h1, h2, h3, p, a {
@@ -21,8 +23,9 @@ body, h1, h2, h3, p, a {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    /* font-family: Arial, sans-serif; */
+    font-family: sans-serif;
+    font-size: 14px;
     /* line-height: 1.5; */
     color: #333;
 }

@@ -3,7 +3,7 @@ header {
     /* width: 10; */
     height: 90px;
     /* background-color: var(--third-color); */
-    background-color: rgba(0, 0, 0, 0.562);
+    background-color: black;
     backdrop-filter: blur(10px) saturate(180%);
     display: flex;
     justify-content: center;
@@ -13,6 +13,7 @@ header {
     color: white;
     margin: 7px 10px;
     border-radius: 20px;
+    font-size: 14px;
     
     .headercontainer {
       flex: 1;
